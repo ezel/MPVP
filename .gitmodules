@@ -1,0 +1,3 @@
+[submodule "submodules/psv"]
+	path = submodules/psv
+	url = https://github.com/ezel/PokeSpeedViewer.git
