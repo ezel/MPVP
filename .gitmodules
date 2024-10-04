@@ -1,3 +1,6 @@
 [submodule "submodules/psv"]
 	path = submodules/psv
 	url = https://github.com/ezel/PokeSpeedViewer.git
+[submodule "submodules/vt"]
+	path = submodules/vt
+	url = https://github.com/ezel/vgctrans.git
