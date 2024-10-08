@@ -2,7 +2,7 @@
 import { Link, useLoaderData, redirect } from "react-router-dom";
 //import { useState, useEffect } from "react";
 //import { lazy, Suspense } from 'react';
-//import SearchBox from '../sublibs/vt.lib.js';
+import TranslateBox from '../sublibs/vt.lib.jsx';
 import SpeedViewer from '../sublibs/psv.lib.jsx';
 
 export async function loader({ params }) {
@@ -29,7 +29,7 @@ export default function Sub() {
             case 'psv':
                 return <SpeedViewer initPMNames={["Incineroar", "Kyogre"]} />;
             case 'vt':
-                return <div>vt</div>;
+                return <TranslateBox />;
             default:
                 return <div> no matching component</div>
         }
@@ -42,7 +42,6 @@ export default function Sub() {
                 <span>{fullName}</span>
             </div>
             <div id="sub">
-                <p>subname {subName} </p>
                 {renderBasedOnSub()}
             </div>
         </>
