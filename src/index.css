@@ -6,4 +6,5 @@ div#navbar {
 div#sub {
   width: auto;
   border: solid 1px black;
+  padding: 4px;
 }

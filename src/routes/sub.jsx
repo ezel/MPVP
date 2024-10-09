@@ -27,7 +27,8 @@ export default function Sub() {
     const renderBasedOnSub = () => {
         switch (subName) {
             case 'psv':
-                return <SpeedViewer initPMNames={["Incineroar", "Kyogre"]} />;
+                const names = ['Gholdengo','Archaludon','Rillaboom','Dragonite','Incineroar','Amoonguss','Ursaluna-Bloodmoon','Kingambit','Sneasler','Primarina','Dondozo','Maushold','Annihilape','Pelipper','Garchomp','Tatsugiri','Whimsicott','Talonflame','Basculegion','Volcarona','Indeedee-F','Tyranitar','Dragapult','Murkrow','Typhlosion-Hisui','Ursaluna','Porygon2','Farigiraf','Meowscarada','Glimmora','Torkoal','Electabuzz','Hydreigon','Ninetales-Alola','Clefable','Indeedee','Armarouge','Sinistcha','Gallade','Salamence','Sylveon','Grimmsnarl','Arcanine-Hisui','Pawmot','Tauros-Paldea-Aqua','Zoroark-Hisui','Lilligant-Hisui','Hatterene','Flamigo','Palafin','Excadrill','Decidueye-Hisui','Kommo-o','Baxcalibur',];
+                return <SpeedViewer initPMNames={names} />;
             case 'vt':
                 return <TranslateBox />;
             default:
